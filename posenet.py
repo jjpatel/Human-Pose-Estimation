@@ -18,7 +18,7 @@ from pynput.keyboard import Key, Controller
 # Creating and Initialising all the parameters and variables
 keyboard1 = Controller()
 
-net = cv.dnn.readNetFromTensorflow(r"C:\Users\SUSHANT\Jupyter_Projects\PoseNet\graph_opt.pb") ## weights
+net = cv.dnn.readNetFromTensorflow(r"C:\Users\JATAN\Jupyter_Projects\PoseNet\graph_opt.pb") ## weights
 
 inWidth = 368
 inHeight = 368
@@ -80,7 +80,7 @@ window.title("PoseNet Implementation")
 window.geometry('1200x650')
 
 #window.configure(image = bg)
-bgr = Image.open(r"C:\Users\SUSHANT\Downloads\bgr.jpg") 
+bgr = Image.open(r"C:\Users\JATAN\Downloads\bgr.jpg") 
 bgr = bgr.resize((1200, 650))
 bg = ImageTk.PhotoImage(bgr)
 canvas1 = Canvas(window, width = 1200, height = 650)
